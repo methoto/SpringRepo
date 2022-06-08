@@ -1,0 +1,361 @@
+@charset "UTF-8";
+@import url(common.css);
+
+#wrap{
+    width:100%;
+    margin:0 auto;
+}
+#txt1{
+    position:fixed;
+    top:0;
+    left:0;
+    font-size:30px;
+    color:#222;
+}
+.topbtn{
+    position:fixed;
+    cursor: pointer;
+    bottom:5%;
+    right:5%;
+    opacity:0;
+    transition:all 0.5s;
+}
+/*로고영역*/
+header{
+    margin:0 auto;
+    width:1300px;
+    height:300px;
+}
+.top{
+    position:relative;
+    width:100%;
+    height:200px;
+    background: rgb(255, 255, 255);
+}
+.top .top-logo{
+    font-size:50px;
+    padding-top:60px;
+    text-align: center;
+}
+.top .top-title{
+    font-size:20px;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+/*메뉴바*/
+.top-nav1{
+    position:relative;
+    width:100%;
+    height:100px;
+    background: rgb(34, 34, 34);
+}
+.top-nav1>ul>li{
+    float:left;
+    margin:0 20px;
+    padding-top:20px;
+    height:100px;
+}
+
+/*검색*/
+.top-nav1 ul li .search{
+    width:800px;
+    height:60px;
+    margin-left:150px;
+    font-size:25px;
+    border:none;
+    padding-left:30px;
+}
+.top-nav1 ul li img{
+    cursor: pointer;
+    width:60px;
+}
+/*알림 서브메뉴*/
+.top-nav1 .an-menu{
+    z-index: 1000;
+    /* transition:all 0.5s; */
+    display:none;
+    position:absolute;
+    top:100px;
+    right:185px;
+    text-align: center;
+    width:150px;
+    height:185px;
+    background: rgba(255, 255, 255,0.7);
+    border-radius: 0 0 10px 10px;
+    overflow:hidden;
+}
+.top-nav1 .an-menu>li{
+    width:150px;
+    height:40px;
+    margin:5px 0;
+    /* background: cornsilk; */
+}
+.top-nav1 .an-menu li a{
+    color:#222;
+    display:block;
+    line-height: 40px;
+    height:40px;
+    font-size:18px;
+    transition:all 0.3s;
+}
+.top-nav1 .an-menu li a:hover{
+    background: #222;
+    color:#fff;
+}
+
+/*프로필 서브메뉴*/
+.top-nav1 .p-menu{
+    z-index: 1000;
+    display:none;
+    position:absolute;
+    top:100px;
+    right:85px;
+    text-align: center;
+    width:150px;
+    height:185px;
+    background: rgba(255, 255, 255,0.7);
+    border-radius: 0 0 10px 10px;
+    overflow:hidden;
+}
+.top-nav1 .p-menu>li{
+    margin:5px 0;
+    /* background: cornsilk; */
+}
+.top-nav1 .p-menu li a{
+    display:block;
+    line-height: 40px;
+    height:40px;
+    font-size:18px;
+    transition:all 0.3s;
+}
+.top-nav1 .p-menu li a:hover{
+    background: #222;
+    color:#fff;
+}
+
+/*옆에서 나오는 메뉴*/
+.top-nav2{
+    border:1px solid rgb(212, 212, 212);
+    color:222;
+    position:fixed;
+    top:0;
+    right:-460px;
+    /* display:none; */
+    width:350px;
+    height:100%;
+    z-index: 2000;
+    background: rgb(255, 255, 255);
+    overflow:hidden;
+    transition:all 0.4s;
+}
+.top-nav2 .me{
+    width:200px;
+    margin:20px auto;
+}
+.top-nav2 .lv{
+    text-align: center;
+    width:300px;
+    height:40px;
+    margin:0 auto;
+}
+.top-nav2 .lv span{
+    font-size:20px;
+    margin-right:15px;
+}
+.top-nav2 .p-menu2{
+    position:absolute;
+    bottom:100px;
+    text-align: center;
+    width:100%;
+    margin:0 auto;
+}
+.top-nav2 .p-menu2 ul li{
+    width:33%;
+    float:left;
+}
+.top-nav2 .p-menu2 ul li img{
+    width:50px;
+}
+.top-nav2 .p-menu2 a{
+    margin:15px;
+    display:block;
+    font-size:18px;
+}
+/*닫기*/
+.top-nav2 .close{
+    position:absolute;
+    width:100px;
+    top:0;
+    right:-40px;
+    cursor: pointer;
+}
+.top-nav2 .close img{
+    width:50px;
+}
+
+.top-nav2 .line{
+    width:575px;
+    height:1px;
+    border-bottom:4px solid #222;
+}
+.top-nav2 .sub-menu{
+    margin-top:30px;
+    text-align: center;
+    font-size:25px;
+}
+.top-nav2 .sub-menu li{
+    margin:15px;
+}
+.top-nav2 .sub-in-menu{
+    display:none;
+    font-size:20px;
+}
+.top-nav2 .sub-in-menu li a{
+    display:block;
+    transition:all 0.3s;
+    color:#666;
+}
+.top-nav2 .sub-in-menu li a:hover{
+    color:rgb(107, 183, 255);
+}
+/*검은배경*/
+/* .modar{
+    position:absolute;
+    top:210px;
+    right:325px;
+    z-index: 1500;
+    width:70px;
+    height:70px;
+    background: rgba(0,0,0,0.8) ;
+} */
+
+/*스크롤 내리면 나오는 메뉴*/
+.top-nav3{
+    /* display:none; */
+    position:fixed;
+    top:-80px;
+    width:1300px;
+    height:80px;
+    background: #222;
+    transition:all 0.5s;
+    z-index: 2000;
+}
+.top-nav3 .logo2{
+    float:left;
+    width:90px;
+    height:80px;
+    line-height: 80px;
+    color:#fff;
+    font-size:23px;
+    /* padding:0 30px; */
+    margin-right:40px;
+    margin-left:20px;
+}
+.top-nav3>ul>li{
+    text-align: center;
+    float:left;
+    line-height: 80px;
+    width:175px;
+    /* margin:0 15px; */
+}
+.top-nav3 ul li:nth-child(7){
+    width:100px;
+    margin-top:15px;
+    cursor: pointer;
+}
+/* .top-nav3 ul li:nth-child(1){margin-top:20px;;line-height: 20px;}
+.top-nav3 ul li:nth-child(4){margin-top:20px;;line-height: 20px;}
+.top-nav3 ul li:nth-child(5){margin-top:20px;;line-height: 20px;} */
+.top-nav3 ul li .an-menu2{
+    overflow:hidden;
+    display:none;
+    position:absolute;
+    top:80px;
+    width:100px;
+    border-radius: 0 0 10px 10px;
+    background: rgba(255, 255, 255,0.8);
+}
+.top-nav3 ul li .an-menu2 li{
+    line-height: 60px;
+    width:100px;
+    height:60px;
+}
+.top-nav3 ul li .an-menu2 li a{
+    display:block;
+    height:60px;
+    font-size:18px;
+    color:#222;
+    transition:all 0.3s;
+}
+.top-nav3 ul li .an-menu2 li a:hover{
+    background: #222;
+    color:#fff;
+}
+.top-nav3>ul>li>a{
+    transition:all 0.5s;
+    line-height: 23px;
+    padding-top:15px;
+    height:80px;
+    display:block;
+    font-size:16px;
+    color:#fff;
+}
+.top-nav3>ul>li:nth-child(1) a{height: 65px;}
+.top-nav3>ul>li:nth-child(4) a{height: 65px;}
+.top-nav3>ul>li:nth-child(5) a{height: 65px;}
+.top-nav3>ul>li:nth-child(2) a{line-height: 80px;padding:0;}
+.top-nav3>ul>li:nth-child(3) a{line-height: 80px;padding:0;}
+.top-nav3>ul>li:nth-child(6) a{line-height: 80px;padding:0;}
+.top-nav3>ul>li>a:hover{
+    color:#222;
+    background: #fff;
+}
+.top-nav3 ul li img{width:50px;}
+.top-nav3 .sub-in-menu2{
+    height:300px;
+    display:none;
+}
+.top-nav3 .sub-in-menu2 li{
+    height:50px;
+	text-align: center;
+    transition:all 0.2s;
+    background: rgba(0,0,0,0.8);
+}
+.top-nav3 .sub-in-menu2 li a{
+    line-height: 50px;
+    height:50px;
+    display:block;
+    color:#fff;
+    font-size:16px;
+    transition:all 0.3s;
+}
+.top-nav3 .sub-in-menu2 li:hover a{
+    color:#222;
+    background: #fff;
+}
+
+
+
+/* .top-nav3 .top-nav3-bg{
+    width:1300px;
+    height:300px;
+    padding-top:80px;
+    background: rgba(0, 0, 0,0.8);
+} */
+
+
+/*==============Footer============*/
+footer{
+    width:1300px;
+    margin:-80px auto;
+    height:150px;
+    background: #222;
+    text-align: center;
+}
+footer h2{
+    font-size:45px;
+    color:#fff;
+    line-height: 150px;
+}

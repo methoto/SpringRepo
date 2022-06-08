@@ -1,0 +1,836 @@
+@charset "UTF-8";
+@import url(common.css);
+
+#wrap{
+    width:100%;
+    margin:0 auto;
+}
+#txt1{
+    position:fixed;
+    top:0;
+    left:0;
+    font-size:30px;
+    color:#222;
+}
+.topbtn{
+    position:fixed;
+    cursor: pointer;
+    bottom:5%;
+    right:5%;
+    opacity:0;
+    transition:all 0.5s;
+}
+/*로고영역*/
+header{
+    margin:0 auto;
+    width:1300px;
+    height:300px;
+}
+.top{
+    position:relative;
+    width:100%;
+    height:200px;
+    background: rgb(255, 255, 255);
+}
+.top .top-logo{
+    font-size:50px;
+    padding-top:60px;
+    text-align: center;
+    cursor: pointer;
+}
+.top .top-title{
+    font-size:20px;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+/*메뉴바*/
+.top-nav1{
+    position:relative;
+    width:100%;
+    height:100px;
+    background: rgb(34, 34, 34);
+}
+.top-nav1>ul>li{
+    float:left;
+    margin:0 20px;
+    padding-top:20px;
+    height:100px;
+}
+
+/*검색*/
+.top-nav1 ul li .search{
+    width:800px;
+    height:60px;
+    margin-left:150px;
+    font-size:25px;
+    border:none;
+    padding-left:30px;
+}
+.top-nav1 ul li img{
+    cursor: pointer;
+    width:60px;
+}
+/*알림 서브메뉴*/
+.top-nav1 .an-menu{
+    z-index: 1000;
+    /* transition:all 0.5s; */
+    display:none;
+    position:absolute;
+    top:100px;
+    right:185px;
+    text-align: center;
+    width:150px;
+    height:185px;
+    background: rgba(255, 255, 255,0.7);
+    border-radius: 0 0 10px 10px;
+    overflow:hidden;
+}
+.top-nav1 .an-menu>li{
+    width:150px;
+    height:40px;
+    margin:5px 0;
+    /* background: cornsilk; */
+}
+.top-nav1 .an-menu li a{
+    color:#222;
+    display:block;
+    line-height: 40px;
+    height:40px;
+    font-size:18px;
+    transition:all 0.3s;
+}
+.top-nav1 .an-menu li a:hover{
+    background: #222;
+    color:#fff;
+}
+
+/*프로필 서브메뉴*/
+.top-nav1 .p-menu{
+    z-index: 1000;
+    display:none;
+    position:absolute;
+    top:100px;
+    right:85px;
+    text-align: center;
+    width:150px;
+    height:185px;
+    background: rgba(255, 255, 255,0.7);
+    border-radius: 0 0 10px 10px;
+    overflow:hidden;
+}
+.top-nav1 .p-menu>li{
+    margin:5px 0;
+    /* background: cornsilk; */
+}
+.top-nav1 .p-menu li a{
+    display:block;
+    line-height: 40px;
+    height:40px;
+    font-size:18px;
+    transition:all 0.3s;
+}
+.top-nav1 .p-menu li a:hover{
+    background: #222;
+    color:#fff;
+}
+
+/*옆에서 나오는 메뉴*/
+.top-nav2{
+    border:1px solid rgb(212, 212, 212);
+    color:222;
+    position:fixed;
+    top:0;
+    right:-460px;
+    /* display:none; */
+    width:350px;
+    height:100%;
+    z-index: 2000;
+    background: rgb(255, 255, 255);
+    overflow:hidden;
+    transition:all 0.4s;
+}
+.top-nav2 .me{
+    width:200px;
+    margin:20px auto;
+}
+.top-nav2 .lv{
+    text-align: center;
+    width:300px;
+    height:40px;
+    margin:0 auto;
+}
+.top-nav2 .lv span{
+    font-size:20px;
+    margin-right:15px;
+}
+.top-nav2 .p-menu2{
+    position:absolute;
+    bottom:100px;
+    text-align: center;
+    width:100%;
+    margin:0 auto;
+}
+.top-nav2 .p-menu2 ul li{
+    width:33%;
+    float:left;
+}
+.top-nav2 .p-menu2 ul li img{
+    width:50px;
+}
+.top-nav2 .p-menu2 a{
+    margin:15px;
+    display:block;
+    font-size:18px;
+}
+/*닫기*/
+.top-nav2 .close{
+    position:absolute;
+    width:100px;
+    top:0;
+    right:-40px;
+    cursor: pointer;
+}
+.top-nav2 .close img{
+    width:50px;
+}
+
+.top-nav2 .line{
+    width:575px;
+    height:1px;
+    border-bottom:4px solid #222;
+}
+.top-nav2 .sub-menu{
+    margin-top:30px;
+    text-align: center;
+    font-size:25px;
+}
+.top-nav2 .sub-menu li{
+    margin:15px;
+}
+.top-nav2 .sub-in-menu{
+    display:none;
+    font-size:20px;
+}
+.top-nav2 .sub-in-menu li a{
+    display:block;
+    transition:all 0.3s;
+    color:#666;
+}
+.top-nav2 .sub-in-menu li a:hover{
+    color:rgb(107, 183, 255);
+}
+/*검은배경*/
+/* .modar{
+    position:absolute;
+    top:210px;
+    right:325px;
+    z-index: 1500;
+    width:70px;
+    height:70px;
+    background: rgba(0,0,0,0.8) ;
+} */
+
+/*스크롤 내리면 나오는 메뉴*/
+.top-nav3{
+    /* display:none; */
+    position:fixed;
+    top:-80px;
+    width:1300px;
+    height:80px;
+    background: #222;
+    transition:all 0.5s;
+    z-index: 2000;
+}
+.top-nav3 .logo2{
+    float:left;
+    width:90px;
+    height:80px;
+    line-height: 80px;
+    color:#fff;
+    font-size:23px;
+    /* padding:0 30px; */
+    margin-right:40px;
+    margin-left:20px;
+}
+.top-nav3>ul>li{
+    text-align: center;
+    float:left;
+    line-height: 80px;
+    width:175px;
+    /* margin:0 15px; */
+}
+.top-nav3 ul li:nth-child(7){
+    width:100px;
+    margin-top:15px;
+    cursor: pointer;
+}
+/* .top-nav3 ul li:nth-child(1){margin-top:20px;;line-height: 20px;}
+.top-nav3 ul li:nth-child(4){margin-top:20px;;line-height: 20px;}
+.top-nav3 ul li:nth-child(5){margin-top:20px;;line-height: 20px;} */
+.top-nav3 ul li .an-menu2{
+    overflow:hidden;
+    display:none;
+    position:absolute;
+    top:80px;
+    width:100px;
+    border-radius: 0 0 10px 10px;
+    background: rgba(255, 255, 255,0.8);
+}
+.top-nav3 ul li .an-menu2 li{
+    line-height: 60px;
+    width:100px;
+    height:60px;
+}
+.top-nav3 ul li .an-menu2 li a{
+    display:block;
+    height:60px;
+    font-size:18px;
+    color:#222;
+    transition:all 0.3s;
+}
+.top-nav3 ul li .an-menu2 li a:hover{
+    background: #222;
+    color:#fff;
+}
+.top-nav3>ul>li>a{
+    transition:all 0.5s;
+    line-height: 23px;
+    padding-top:15px;
+    height:80px;
+    display:block;
+    font-size:16px;
+    color:#fff;
+}
+.top-nav3>ul>li:nth-child(1) a{height: 65px;}
+.top-nav3>ul>li:nth-child(4) a{height: 65px;}
+.top-nav3>ul>li:nth-child(5) a{height: 65px;}
+.top-nav3>ul>li:nth-child(2) a{line-height: 80px;padding:0;}
+.top-nav3>ul>li:nth-child(3) a{line-height: 80px;padding:0;}
+.top-nav3>ul>li:nth-child(6) a{line-height: 80px;padding:0;}
+.top-nav3>ul>li>a:hover{
+    color:#222;
+    background: #fff;
+}
+.top-nav3 ul li img{width:50px;}
+.top-nav3 .sub-in-menu2{
+    height:300px;
+    display:none;
+}
+.top-nav3 .sub-in-menu2 li{
+    height:50px;
+	text-align: center;
+    transition:all 0.2s;
+    background: rgba(0,0,0,0.8);
+}
+.top-nav3 .sub-in-menu2 li a{
+    line-height: 50px;
+    height:50px;
+    display:block;
+    color:#fff;
+    font-size:16px;
+    transition:all 0.3s;
+}
+.top-nav3 .sub-in-menu2 li:hover a{
+    color:#222;
+    background: #fff;
+}
+
+/* .top-nav3 .top-nav3-bg{
+    width:1300px;
+    height:300px;
+    padding-top:80px;
+    background: rgba(0, 0, 0,0.8);
+} */
+
+/*======================section=====================*/
+section{
+    margin:0 auto;
+    width:1300px;
+    height:4470px;
+}
+
+/*카드뉴스*/
+.cardnews{
+    position:relative;
+    width:1300px;
+    margin:0 auto;
+    height:580px;
+    /* background: rgb(255, 194, 194); */
+    overflow:hidden;
+}
+.cardnews>div>h3{
+    height:50px;
+    background: rgb(46, 86, 160);
+    line-height: 50px;
+    font-size:26px;
+    color:#fff;
+    text-align: center;
+    margin:50px 0 70px 0;
+}
+.cardnews ul{
+    width:4400px;
+    height:500px;
+    overflow:hidden;
+
+}
+.cardnews ul li{
+    position: relative;
+    width:400px;
+    height:400px;
+    background: rgb(255, 255, 255);
+    float:left;
+    margin:0 15px 15px 15px;
+    border:1px solid rgb(221, 221, 221);
+    transition:all 0.5s;
+    box-shadow: 6px 6px 3px rgb(214, 214, 214);
+}
+
+.in-box{ /*본문내용*/
+    transition:all 0.3s;
+    position:absolute;
+    opacity:0;
+    top:-20px;
+    z-index: 100;
+    width:400px;
+    height:400px;
+    background: rgba(255, 255, 255,0.8);
+}
+.cardnews ul li:hover .in-box{opacity:1;}
+/* .cardnews ul li:first-child{margin:0 15px 15px 0;} */
+.cardnews ul li:hover .c-box img{
+    transform: scale(1.4);
+}
+.cardnews ul li .c-box{
+    width:400px;
+    height:300px;
+    overflow: hidden;
+    background: #222;
+}
+.cardnews ul li .c-box img{transform: scale(2);}
+.cardnews ul li span{
+    display:block;
+    font-size:20px;
+    color:#222;
+    text-align: center;
+    margin-top:20px;
+}
+.cardnews ul li img{
+    transform: scale(1);
+    transition:all 0.4s;
+}
+/*버튼*/
+.cardnews .btn span{
+    float:left;
+    position: absolute;
+    top:55%;
+    z-index: 100;
+    cursor: pointer;
+}
+.btn .right-btn{margin-left:1235px;}
+.btn img{width:75px;}
+
+/*1번째줄*/
+#line1{
+    width:1300px;
+    height:530px;
+    /* background: rgb(255, 184, 142); */
+    /* overflow:hidden; */
+}
+#line1>div h3{
+    width:620px;
+    height:50px;
+    background: rgb(46, 86, 160);
+    line-height: 50px;
+    font-size:26px;
+    color:#fff;
+    text-align: center;
+    margin: 70px 0;
+}
+
+/*메타버스 정보공유게시판*/
+#line1 .content1{
+    width:620px;
+    height:500px;
+    float:left;
+    margin-right:60px;
+    /* background: cornflowerblue; */
+}
+#line1 .content1 ul li{
+    width:620px;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+    font-size:18px;
+    border-bottom:1px solid #222;
+    transition:all 0.3s;
+}
+.content1 ul li:hover{
+    box-shadow: 3px 3px 3px rgb(214, 214, 214);
+}
+
+/*NFT 정보게시판*/
+#line1 .content2{
+    float:left;
+    width:620px;
+    height:500px;
+}
+#line1 .content2 ul li{
+    width:620px;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+    font-size:18px;
+    border-bottom:1px solid #222;
+    transition:all 0.3s;
+}
+.content2 ul li:hover{
+    box-shadow: 3px 3px 3px rgb(214, 214, 214);
+}
+/*2번째줄*/
+#line2{
+    width:100%;
+    height:520px;
+    /* background: rgb(154, 147, 255); */
+    /* overflow:hidden; */
+}
+#line2>div h3{
+    /* clear:both; */
+    width:620px;
+    height:50px;
+    background: rgb(46, 86, 160);
+    line-height: 50px;
+    font-size:26px;
+    color:#fff;
+    text-align: center;
+    margin: 70px 0;
+}
+
+/*메타버스 정보공유게시판*/
+#line2 .content1{
+    width:620px;
+    height:500px;
+    float:left;
+    margin-right:60px;
+    /* background: cornflowerblue; */
+}
+#line2 .content1 ul li{
+    width:620px;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+    font-size:18px;
+    border-bottom:1px solid #222;
+    transition:all 0.3s;
+}
+.content1 ul li:hover{
+    box-shadow: 3px 3px 3px rgb(214, 214, 214);
+}
+
+/*NFT 정보게시판*/
+#line2 .content2{
+    float:left;
+    width:620px;
+    height:500px;
+}
+#line2 .content2 ul li{
+    width:620px;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+    font-size:18px;
+    border-bottom:1px solid #222;
+    transition:all 0.3s;
+}
+.content2 ul li:hover{
+    box-shadow: 3px 3px 3px rgb(214, 214, 214);
+}
+
+/*3번째줄*/
+#line3{
+    width:100%;
+    height:775px;
+    /* background: rgb(221, 255, 175); */
+    /* overflow:hidden; */
+}
+#line3>div h3{
+    width:1300px;
+    height:50px;
+    background: rgb(46, 86, 160);
+    line-height: 50px;
+    font-size:26px;
+    color:#fff;
+    text-align: center;
+    margin: 70px 0;
+}
+#line3 .line-sub1{
+    float:left;
+    width:620px;
+    margin-right:40px;
+}
+#line3 .game-img{
+    width:620px;
+    height:310px;
+    margin-bottom:30px;
+    float:left;
+    /* background: #222; */
+}
+.game-img li{
+    float:left;
+    overflow:hidden;
+    transition:all 0.5s;
+    width:300px;
+    height:300px;
+}
+.game-img li:first-child{
+    margin-right:20px;
+}
+.game-img li img{
+    transition: all 0.3s;
+    width:310px;
+    height:310px;
+}
+.game-img li:hover img{
+    transform: scale(1.05);
+}
+#line3 .content1{
+    width:620px;
+    height:500px;
+    margin-right:30px;
+    /* background: cornflowerblue; */
+}
+#line3 .content1>li{
+    width:620px;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+    font-size:18px;
+    border-bottom:1px solid #222;
+    transition:all 0.3s;
+}
+.content1 li:hover{
+    box-shadow: 3px 3px 3px rgb(214, 214, 214);
+}
+
+#line3 .line-sub2{
+    float:left;
+    margin:190px 0 0 20px;
+    width:620px;
+}
+#line3 .content2{
+    width:620px;
+    height:500px;
+    /* margin-right:30px; */
+    /* background: cornflowerblue; */
+}
+#line3 .content2>li{
+    width:620px;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+    font-size:18px;
+    border-bottom:1px solid #222;
+    transition:all 0.3s;
+}
+.content2 li:hover{
+    box-shadow: 3px 3px 3px rgb(214, 214, 214);
+}
+
+/*4번째줄*/
+#line4{
+    width:100%;
+    height:775px;
+    /* background: rgb(221, 255, 175); */
+    /* overflow:hidden; */
+}
+#line4 .line-sub1{
+    float:left;
+    width:620px;
+    margin-right:60px;
+}
+#line4 .line-sub1 h3{
+    /* clear:both; */
+    width:620px;
+    height:50px;
+    background: rgb(46, 86, 160);
+    line-height: 50px;
+    font-size:26px;
+    color:#fff;
+    text-align: center;
+    margin: 70px 0;
+}
+#line4 .game-img{
+    width:620px;
+    height:310px;
+    margin-bottom:30px;
+    float:left;
+    /* background: #222; */
+}
+#line4 .content1{
+    width:620px;
+    height:500px;
+    /* margin-right:50px; */
+    /* background: cornflowerblue; */
+}
+#line4 .content1>li{
+    width:620px;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+    font-size:18px;
+    border-bottom:1px solid #222;
+    transition:all 0.3s;
+}
+
+#line4 .line-sub2{
+    float:left;
+    /* margin-left: 20px; */
+    width:620px;
+}
+#line4 .line-sub2 h3{
+    /* clear:both; */
+    width:620px;
+    height:50px;
+    background: rgb(46, 86, 160);
+    line-height: 50px;
+    font-size:26px;
+    color:#fff;
+    text-align: center;
+    margin: 70px 0;
+}
+#line4 .content2{
+    width:620px;
+    height:500px;
+    /* margin-right:30px; */
+    /* background: cornflowerblue; */
+}
+#line4 .content2>li{
+    width:620px;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+    font-size:18px;
+    border-bottom:1px solid #222;
+    transition:all 0.3s;
+}
+
+/*5번째줄*/
+#line5{
+    width:100%;
+    height:610px;
+    /* background: rgb(255, 217, 157);  */
+    overflow:hidden;
+}
+#line5>h3{
+    width:1300px;
+    height:50px;
+    background: rgb(46, 86, 160);
+    line-height: 50px;
+    font-size:26px;
+    color:#fff;
+    text-align: center;
+    margin: 70px 0;
+}
+
+#line5 .nft-list li{
+    position:relative;
+    float:left;
+    width:300px;
+    height:400px;
+    box-shadow: 5px 7px 5px rgb(221, 221, 221);
+    border: 1px solid rgb(216, 216, 216);
+    overflow:hidden;
+    text-align: center;
+    margin:10px;
+}
+#line5 .nft-box{
+    transition:all 0.3s;
+    width:300px;
+    height:0;
+    background: rgba(0,0,0,0.8);
+    position:absolute;
+    /* z-index: 0; */
+    bottom:0px;
+    right:0;
+    color:#fff;
+}
+#line5 .nft-box .name{
+    display:block;
+    opacity:0;
+    padding-top:20px;
+    line-height: 30px;
+    font-size:20px;
+    transition:all 0.3s;
+}
+#line5 .nft-box .money{
+    display:block;
+    font-size:18px;
+    opacity:0;
+    transition:all 0.3s;
+}
+#line5 .nft-list li:hover .nft-box{height:100px;}
+#line5 .nft-list li:hover .nft-box .name{opacity:1;}
+#line5 .nft-list li:hover .nft-box .money{opacity:1;}
+#line5 .nft-list li img{
+    padding-top:50px;
+    transform: scale(1.5);
+    
+}
+/*6번째줄*/
+#line6{
+    width:100%;
+    height:510px;
+    /* background: rgb(104, 232, 255); */
+    /* overflow:hidden; */
+}
+#line6>h3{
+    width:1300px;
+    height:50px;
+    background: rgb(196, 48, 43);
+    line-height: 50px;
+    font-size:26px;
+    color:#fff;
+    text-align: center;
+    margin: 70px 0;
+}
+#line6 .utube-list li{
+    width:300px;
+    height:300px;
+    overflow:hidden;
+    float:left;
+    margin:11px;
+    border:1px solid rgb(221, 221, 221);
+    transition:all 0.5s;
+    box-shadow: 6px 6px 3px rgb(214, 214, 214);
+}
+#line6 .utube-list li img{
+    width:310px;
+    height:200px;  
+}
+#line6 .utube-list li .u-box{
+    width:310px;
+    height:90px;
+    text-align: center;
+    
+}
+#line6 .utube-list li .u-box .u-title{ /*내용이 길어지면 line-height:X padding-top 사용*/
+    line-height: 90px;
+    color:#222;
+    font-size:18px;
+}
+
+
+/*==============Footer============*/
+footer{
+    width:1300px;
+    margin:-80px auto;
+    height:150px;
+    background: #222;
+    text-align: center;
+}
+footer h2{
+    font-size:45px;
+    color:#fff;
+    line-height: 150px;
+}

@@ -1,0 +1,291 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+#wrap{
+    font-family: 'Nanum Gothic', sans-serif;
+    width:100%;
+    margin:0 auto;
+    height:auto;
+    background: #fff;
+}
+
+/*Header*/
+header{
+    width:100%;
+    height:80px;
+    background: #222;
+}
+/* header>h1{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+    line-height: 200px;
+    font-size:40px;
+} */
+
+.header-in{width:1300px;height:90px;margin:0 auto;}
+
+.top-nav4{
+    /* display:none; */
+    position:absolute;
+    width:1300px;
+    height:80px;
+    background: #222;
+    transition:all 0.5s;
+    z-index: 2000;
+}
+.top-nav4 .logo2{
+    float:left;
+    width:90px;
+    height:80px;
+    line-height: 80px;
+    color:#fff;
+    font-size:23px;
+    /* padding:0 30px; */
+    margin-right:40px;
+    margin-left:20px;
+}
+.top-nav4>ul>li{
+    text-align: center;
+    float:left;
+    line-height: 80px;
+    width:175px;
+    /* margin:0 15px; */
+}
+.top-nav4 ul li:nth-child(7){
+    width:100px;
+    margin-top:15px;
+    cursor: pointer;
+}
+/* .top-nav3 ul li:nth-child(1){margin-top:20px;;line-height: 20px;}
+.top-nav3 ul li:nth-child(4){margin-top:20px;;line-height: 20px;}
+.top-nav3 ul li:nth-child(5){margin-top:20px;;line-height: 20px;} */
+.top-nav4 ul li .an-menu2{
+    overflow:hidden;
+    display:none;
+    position:absolute;
+    top:80px;
+    width:100px;
+    border-radius: 0 0 10px 10px;
+    background: rgba(255, 255, 255,0.8);
+}
+.top-nav4 ul li .an-menu2 li{
+    line-height: 60px;
+    width:100px;
+    height:60px;
+}
+.top-nav4 ul li .an-menu2 li a{
+    display:block;
+    height:60px;
+    font-size:18px;
+    color:#222;
+    transition:all 0.3s;
+}
+.top-nav4 ul li .an-menu2 li a:hover{
+    background: #222;
+    color:#fff;
+}
+.top-nav4>ul>li>a{
+    transition:all 0.5s;
+    line-height: 23px;
+    padding-top:15px;
+    height:80px;
+    display:block;
+    font-size:16px;
+    color:#fff;
+}
+.top-nav4>ul>li:nth-child(1) a{height: 65px;}
+.top-nav4>ul>li:nth-child(4) a{height: 65px;}
+.top-nav4>ul>li:nth-child(5) a{height: 65px;}
+.top-nav4>ul>li:nth-child(2) a{line-height: 80px;padding:0;}
+.top-nav4>ul>li:nth-child(3) a{line-height: 80px;padding:0;}
+.top-nav4>ul>li:nth-child(6) a{line-height: 80px;padding:0;}
+.top-nav4>ul>li>a:hover{
+    color:#222;
+    background: #fff;
+}
+.top-nav4 ul li img{width:50px;}
+.top-nav4 .sub-in-menu2{
+    height:300px;
+    display:none;
+}
+.top-nav4 .sub-in-menu2 li{
+    height:50px;
+    text-align: center;
+    transition:all 0.2s;
+    background: rgba(0,0,0,0.8);
+}
+.top-nav4 .sub-in-menu2 li a{
+    line-height: 50px;
+    height:50px;
+    display:block;
+    color:#fff;
+    font-size:16px;
+    transition:all 0.3s;
+}
+.top-nav4 .sub-in-menu2 li:hover a{
+    color:#222;
+    background: #fff;
+}
+
+
+/*section*/
+
+section{
+    width: 1300px;
+    background: #fff;
+    height: 1800px;
+    margin:80px auto;
+    text-align: center;
+}
+.h2{
+    display:block;
+    color:#222;
+    font-size:30px;
+    margin-bottom:50px;
+}
+.top-search{
+    width:1300px;
+    text-align: center;
+    margin:100px 0;
+}
+input{
+    width:800px;
+    height:60px;
+    padding-left:20px;
+    font-size:20px;
+    border-radius: 10px;
+    border:1px solid #888;
+}
+
+.s1{
+    position: relative;
+    width:1300px;
+    height:450px;
+    /* background: pink; */
+}
+.s1 ul li{
+    border-radius: 10px;
+    float:left;
+    width:380px;
+    height:380px;
+    background: rgb(255, 255, 255);
+    float:left;
+    margin:0 25px 25px 25px;
+    border:1px solid rgb(221, 221, 221);
+    border-radius: 10px;
+    transition:all 0.5s;
+    box-shadow: 6px 6px 3px rgb(214, 214, 214);
+}
+
+.s1 .in-box{ /*본문내용*/
+    transition:all 0.3s;
+    position:absolute;
+    opacity:0;
+    top:-34px;
+    z-index: 100;
+    width:380px;
+    height:380px;
+    background: rgba(255, 255, 255,0.8);
+    border-radius: 10px;
+}
+.s1 ul li:hover .in-box{opacity:1;}
+/* .cardnews ul li:first-child{margin:0 15px 15px 0;} */
+.s1 ul li:hover .c-box img{
+    transform: scale(1.4);
+}
+.s1 ul li .c-box{
+    border-radius: 10px 10px 0 0;
+    width:380px;
+    height:280px;
+    overflow: hidden;
+    background: #222;
+}
+.s1 ul li .c-box img{transform: scale(2);}
+.s1 ul li span{
+    display:block;
+    font-size:20px;
+    color:#222;
+    text-align: center;
+    margin-top:35px;
+}
+.s1 ul li img{
+    transform: scale(1);
+    transition:all 0.4s;
+}
+
+.num{
+    width:1300px;
+    height: 50px;
+}
+.num ul{
+    margin-top:50px;
+    margin-left:230px;
+}
+.num ul li{
+    cursor: pointer;
+    float:left;
+    margin:0 10px;
+}
+.num ul li img{
+    width:25px;
+    display:inline-block;
+    margin-top:10px;
+}
+.num ul li{
+    display:block;
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    font-size:16px;
+    color:#444;
+    border-radius: 7px;
+    background: rgb(245, 245, 245);
+    box-shadow: 3px 3px 3px rgb(194, 194, 194);
+    transition: all 0.2s;
+}
+.num ul li:hover{
+    background: rgb(245, 245, 245);
+    box-shadow: 2px 2px 2px rgb(241, 241, 241),
+                inset 2px 2px 2px rgb(185, 185, 185);
+}
+
+.num ul li:nth-child(1){
+    background-color: #fff;
+    box-shadow: none;
+}
+.num ul li:nth-child(2){
+    background-color: #fff;
+    box-shadow: none;
+}
+.num ul li:nth-child(13){
+    background-color: #fff;
+    box-shadow: none;
+}
+.num ul li:nth-child(14){
+    background-color: #fff;
+    box-shadow: none;
+}
+/*현제페이지*/
+.num ul li:nth-child(3){
+    box-shadow: 2px 2px 2px rgb(241, 241, 241),
+    inset 2px 2px 2px rgb(185, 185, 185);
+}
+
+.topbtn{
+    position:fixed;
+    cursor: pointer;
+    bottom:5%;
+    right:5%;
+    opacity:0;
+    transition:all 0.5s;
+}
+/*foorer*/
+footer{
+    width:100%;
+    height: 200px;
+    background: #888;
+    text-align: center;
+}
+

@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+#wrap{
+    font-family: 'Nanum Gothic', sans-serif;
+    width:100%;
+    margin:0 auto;
+    height:auto;
+    background: #fff;
+}
+
+/*Header*/
+header{
+    width:100%;
+    height:80px;
+    background: #222;
+}
+/* header>h1{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+    line-height: 200px;
+    font-size:40px;
+} */
+
+.header-in{width:1300px;height:90px;margin:0 auto;}
+.top-nav4{
+    position:absolute;
+    margin:0 auto;
+    /* display:none; */
+    top:0;
+    width:1300px;
+    height:80px;
+    background: #222;
+    transition:all 0.5s;
+    z-index: 2000;
+}
+.top-nav4 .logo2{
+    float:left;
+    width:90px;
+    height:80px;
+    line-height: 80px;
+    color:#fff;
+    font-size:23px;
+    /* padding:0 30px; */
+    margin-right:40px;
+    margin-left:20px;
+}
+.top-nav4>ul>li{
+    text-align: center;
+    float:left;
+    line-height: 80px;
+    width:190px;
+    /* margin:0 15px; */
+}
+/* .top-nav3 ul li:nth-child(1){margin-top:20px;;line-height: 20px;}
+.top-nav3 ul li:nth-child(4){margin-top:20px;;line-height: 20px;}
+.top-nav3 ul li:nth-child(5){margin-top:20px;;line-height: 20px;} */
+.top-nav4 ul li .an-menu2{
+    overflow:hidden;
+    display:none;
+    position:absolute;
+    top:80px;
+    width:100px;
+    border-radius: 0 0 10px 10px;
+    background: rgba(255, 255, 255,0.8);
+}
+.top-nav4 ul li .an-menu2 li{
+    line-height: 60px;
+    width:100px;
+    height:60px;
+}
+.top-nav4 ul li .an-menu2 li a{
+    display:block;
+    height:60px;
+    font-size:18px;
+    color:#222;
+    transition:all 0.3s;
+}
+.top-nav4 ul li .an-menu2 li a:hover{
+    background: #222;
+    color:#fff;
+}
+.top-nav4>ul>li>a{
+    transition:all 0.5s;
+    line-height: 23px;
+    padding-top:15px;
+    height:80px;
+    display:block;
+    font-size:16px;
+    color:#fff;
+}
+.top-nav4>ul>li:nth-child(1) a{height: 65px;}
+.top-nav4>ul>li:nth-child(4) a{height: 65px;}
+.top-nav4>ul>li:nth-child(5) a{height: 65px;}
+.top-nav4>ul>li:nth-child(2) a{line-height: 80px;padding:0;}
+.top-nav4>ul>li:nth-child(3) a{line-height: 80px;padding:0;}
+.top-nav4>ul>li:nth-child(6) a{line-height: 80px;padding:0;}
+.top-nav4>ul>li>a:hover{
+    color:#222;
+    background: #fff;
+}
+.top-nav4 ul li img{width:50px;}
+.top-nav4 .sub-in-menu2{
+    height:300px;
+    display:none;
+}
+.top-nav4 .sub-in-menu2 li{
+    height:50px;
+	text-align: center;
+    transition:all 0.2s;
+    background: rgba(0,0,0,0.8);
+}
+.top-nav4 .sub-in-menu2 li a{
+    line-height: 50px;
+    height:50px;
+    display:block;
+    color:#fff;
+    font-size:16px;
+    transition:all 0.3s;
+}
+.top-nav4 .sub-in-menu2 li:hover a{
+    color:#222;
+    background: #fff;
+}
+
+/*section*/
+section{
+    width:100%;
+    height: 3000px;
+    clear:both;
+}
+
+
+/*section*/
+
+section{
+    margin-top:120px;
+    background: #fff;
+    height: 800px;
+}
+
+/*테두리*/
+.login-box{
+    text-align: center;
+    border:1px solid #888;
+    width:650px;
+    height: 640px;
+    margin:0 auto;
+}
+
+/*테두리 안 영역글자*/
+.login-box .text h1{
+    font-size:50px;
+    color:#222;
+    margin:60px 0 20px 0;
+}
+.login-box .text p{
+    color:#444;
+    font-size:25px;
+    margin-bottom:70px;
+}
+
+/*로그인 / 패스워드*/
+.login .login-text input{
+    padding-left: 20px;
+    width:380px;
+    height: 60px;
+    color:#222;
+    font-size:20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border:1px solid #888;
+}
+
+/*체크박스*/
+.login .in-box{display:inline-block;
+    width:400px;
+    margin:0 auto;
+    height: 30px;
+    text-align: left;
+    margin-bottom:10px;
+}
+.login span input{
+    width:20px;
+    height:20px;
+    background: #eee;
+    border-style: none;
+    vertical-align: top;
+}
+.login span label{font-size:16px;}
+
+/* .login span input[type="checkbox"] {
+    display:none;
+}
+.login span input[type="checkbox"] + label {
+    color:#444;
+    font-size:16px;
+}
+.login span input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background: #eee;
+    cursor:pointer;
+}
+.login span input[type="checkbox"]:checked + label span {
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+} */
+
+/*버튼*/
+.login-btn input{
+    cursor: pointer;
+    width:400px;
+    height:60px;
+    font-size:18px;
+    border:1px solid rgb(129, 208, 253);
+    background: rgb(129, 208, 253);
+    color:#fff;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom:5px;
+}
+
+.help input{
+    cursor: pointer;
+    font-size:18px;
+    width:190px;
+    height: 60px;
+    border-radius: 8px;
+    margin:10px;
+    border:1px solid rgb(129, 208, 253);
+    background: rgb(129, 208, 253);
+    color:#fff;
+    font-weight: bold;
+}
+.help>a{
+    position:absolute;
+    font-size:18px;
+    width:190px;
+    height: 60px;
+    border-radius: 8px;
+    margin:10px;
+}
+
+
+/*foorer*/
+footer{
+    width:100%;
+    height: 200px;
+    background: #888;
+    text-align: center;
+}
